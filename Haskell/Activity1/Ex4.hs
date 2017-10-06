@@ -4,9 +4,10 @@
 --
 module Main where
 
- main :: IO ()
+mult35 :: Integer -> Bool
+mult35 x = (x `rem` 3) == 0 || (x `rem` 5) == 0
 
- main = do 
-       print(2*3+5)
-       print(2+3*3+1)
-       print(3^4+5*2^5+1)
+main :: IO()
+main = do
+ print(mult35 3)
+ print(mult35 5)

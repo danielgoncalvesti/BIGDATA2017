@@ -4,9 +4,9 @@
 --
 module Main where
 
- main :: IO ()
+div2d :: Integer -> Double
+div2d x = x / 2
 
- main = do 
-       print(2*3+5)
-       print(2+3*3+1)
-       print(3^4+5*2^5+1)
+main :: IO()
+main = do
+	print(div2d 2)
