@@ -4,7 +4,8 @@
 --
 module Main where
 
+import Data.Char
+
 main :: IO()
 main = do 
-      let string1 = "0123456789"
-      print (map (read . (:"")) string1 :: [Int])
+      print (map digitToInt "0123456789")
