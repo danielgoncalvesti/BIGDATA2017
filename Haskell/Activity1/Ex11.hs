@@ -1,0 +1,1 @@
+-- Exercício 11: Crie um concatenador de strings que concatena duas strings separadas por espaço.
