@@ -1,7 +1,7 @@
 -- Exercício 09: Encontre os 10 primeiros anos bissextos.
 -- Copyright (c) 2017 Daniel Gonçalves da Silva - https://github.com/danielgoncalvesti
 -- GPL version 3 or later (see http://www.gnu.org/copyleft/gpl.html)
--- Unfinished
+--
 module Main where
 
 isLeap :: Integer -> Bool
@@ -16,5 +16,6 @@ main :: IO()
 
 main = do
     let years = [1..2017]
-    let lista = [x | x <- years, isLeap x]
-    print(lista)
+    let list = [x | x <- years, isLeap x]
+    let list2 = take 10 list
+    print(list2)
