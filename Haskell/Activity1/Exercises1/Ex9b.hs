@@ -11,9 +11,13 @@ isLeap year
   | year `rem`   4 == 0 = True
   | otherwise           = False
   
+inverse :: [a] -> [a]
+inverse [] = []
+inverse (x:xs) = (inverse xs) ++ [x]
+  
 main :: IO()
 
 main = do
-    let yearsReverse = reverse [1..2017]
-    let lista = take 10 [x | x <- yearsReverse, isLeap x]
+    let yearsReverse = inverse [1..2017]
+    let lista =  [x | x <- yearsReverse, isLeap x]
     print(lista)
