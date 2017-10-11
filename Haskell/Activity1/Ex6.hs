@@ -4,9 +4,10 @@
 --
 module Main where
 
-div2d :: Integer -> Double
-div2d x = x / 2
+div2d :: Int -> Double
+div2d x = (fromIntegral x / fromIntegral 2)
 
 main :: IO()
 main = do
-	print(div2d 2)
+       print(div2d 2)
+
