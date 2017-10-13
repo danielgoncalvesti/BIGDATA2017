@@ -1,0 +1,1 @@
+-- Exercício 08: Faça uma função que calcule o elemento (i,j) do triângulo de pascal.

@@ -1,0 +1,1 @@
+-- Exercício 04: Faça uma função que determine se um número é primo.
