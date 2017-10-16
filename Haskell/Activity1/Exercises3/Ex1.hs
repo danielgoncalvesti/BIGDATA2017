@@ -10,5 +10,5 @@ dividir x y
        
 main :: IO()
 main = do
-     print(divisivel20 0) --True
-     print(divisivel20 20) -- False
+     print(divisivel20 0)
+     print(divisivel20 20) 
